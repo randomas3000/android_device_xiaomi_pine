@@ -19,6 +19,9 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 IS_PHONE := true
 
 
+# Shipping with core GApps
+$(call inherit-product-if-exists, vendor/gapps/core/config.mk)
+
 # Inherit from pine device
 $(call inherit-product, device/xiaomi/pine/device.mk)
 
